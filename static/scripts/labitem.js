@@ -1,7 +1,14 @@
 const main = document.querySelector('main');
-const tg = window.Telegram.WebApp;
+const tg = window.Telegram?.WebApp;
 
-const user = tg.initDataUnsafe.user;
+const user = tg?.initDataUnsafe?.user || {
+    first_name: "Guest"
+};
+
+if (tg) {
+    tg.ready();
+    tg.expand();
+}
 
 function createLabItem(name, room, time) {
     const labItemBg = document.createElement('div');
