@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="static/styles/output.css">
-    <link rel="stylesheet" href="static/styles/labitems.css">
+    <link rel="stylesheet" href="/docs/static/styles/output.css">
+    <link rel="stylesheet" href="/docs/static/styles/labitems.css">
     <script src="https://telegram.org/js/telegram-web-app.js?62"></script>
-    <script src="static/scripts/burger.js" defer></script>
-    <script src="static/scripts/labitem.js" defer></script>
-    <script src="static/scripts/profile.js" defer></script>
-    <script src="static/scripts/authBtns.js" defer></script>
+    <script src="/docs/static/scripts/burger.js" defer></script>
+    <script src="/docs/static/scripts/profile.js" defer></script>
 </head>
 
 <body class="bg-base-dark-darkTheme min-w-32">
@@ -39,13 +37,16 @@
                 </div>
             </button>
             <div class="flex flex-col ml-5 mt-4">
-                <a href="index.html" class="text-white hover:text-primary-darkTheme active:text-secondary-darkTheme w-fit text-[24px]">Главная</a>
-                <a href="static/pages/profile.html" id="profileLink" class="max-w-15 overflow-hidden text-ellipsis whitespace-nowrap text-white hover:text-primary-darkTheme active:text-secondary-darkTheme text-[24px]"></a>
+                <a href="/docs/index.html" class="text-white hover:text-primary-darkTheme active:text-secondary-darkTheme w-fit text-[24px]">Главная</a>
+                <a href="" id="profileLink" class="max-w-15 overflow-hidden text-ellipsis whitespace-nowrap text-white hover:text-primary-darkTheme active:text-secondary-darkTheme text-[24px]"></a>
             </div>
         </nav>
     </header>
     <main class="bg-base-light-darkTheme w-full min-h-30 max-h-fit rounded-2 mt-10 pt-3 relative py-3 flex flex-col items-center">
-        <h2 class="text-white font-bold absolute -top-3 ml-1.5 text-[15px]">Ближайшие лабораторки</h2>
+        <img id="profilePicture" src="" alt="avatar" class="w-10 h-10 bg-black rounded-10 absolute -top-5">
+        <div id="profileStats" class="w-30 h-25 mt-3 flex flex-col items-center">
+            <p id="username" class="text-white text-[25px] font-medium">NEKTARYN</p>
+        </div>
     </main>
     <footer class="bg-base-light-darkTheme w-full h-9 mt-10 rounded-t-2 flex justify-center items-center">
         <p class="text-base-dark-darkTheme text-3 font-extrabold">QMaker</p>

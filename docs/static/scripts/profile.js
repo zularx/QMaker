@@ -1,4 +1,6 @@
 const profileLink = document.getElementById('profileLink');
+const profilePicture = document.getElementById('profilePicture');
+const username = document.getElementById('username');
 
 const tg = window.Telegram?.WebApp;
 
@@ -12,3 +14,5 @@ if (tg) {
 }
 
 profileLink.textContent = user.first_name;
+profilePicture.setAttribute('src', user.photo_url);
+username.textContent = user.first_name;
