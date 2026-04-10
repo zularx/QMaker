@@ -19,4 +19,4 @@ if (tg) {
 profileLink.textContent = user.first_name;
 profilePicture.setAttribute('src', user.photo_url);
 username.textContent = user.first_name;
-userId.textContent = user.username;
+userId.textContent = `@${user.username}`;
