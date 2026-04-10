@@ -8,7 +8,7 @@ const tg = window.Telegram?.WebApp;
 const user = tg?.initDataUnsafe?.user || {
     first_name: "Guest",
     photo_url: "static/images/unknownAvatar.png",
-    id: "@Guest"
+    username: "@Guest"
 };
 
 if (tg) {
@@ -19,4 +19,4 @@ if (tg) {
 profileLink.textContent = user.first_name;
 profilePicture.setAttribute('src', user.photo_url);
 username.textContent = user.first_name;
-userId.textContent = user.id;
+userId.textContent = user.username;
