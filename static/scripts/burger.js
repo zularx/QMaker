@@ -11,6 +11,14 @@ function navBarClose(){
 }
 
 
+function clickOutOfElement(event){
+    if(!navBar.contains(event.target) && !burgerBtn.contains(event.target)){
+        navBar.classList.add('translate-x-full');
+    }
+}
+
+
 
 burgerBtn.addEventListener('click', navBarOpen);
 closeBtn.addEventListener('click', navBarClose);
+document.addEventListener('click', clickOutOfElement);

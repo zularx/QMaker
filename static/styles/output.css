@@ -9,8 +9,6 @@
       "Courier New", monospace;
     --color-white: #fff;
     --spacing: 10px;
-    --font-weight-light: 300;
-    --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
@@ -20,9 +18,7 @@
     --default-mono-font-family: var(--font-mono);
     --radius-1: 10px;
     --radius-2: 20px;
-    --text-1: 10px;
     --text-3: 30px;
-    --text-10: 100px;
     --color-base-dark-darkTheme: #15191E;
     --color-base-medium-darkTheme: #191E24;
     --color-base-light-darkTheme: #1D232A;
@@ -269,8 +265,8 @@
   .max-w-15 {
     max-width: calc(var(--spacing) * 15);
   }
-  .max-w-\[150px\] {
-    max-width: 150px;
+  .min-w-32 {
+    min-width: calc(var(--spacing) * 32);
   }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);

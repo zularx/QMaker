@@ -1,6 +1,6 @@
 const main = document.querySelector('main');
 
-function createLabItem(name, room, time) {
+function createLabItem(name, room, time, buttonId) {
     const labItemBg = document.createElement('div');
     const aboutLab = document.createElement('div');
     const labName = document.createElement('h3');
@@ -20,6 +20,7 @@ function createLabItem(name, room, time) {
     labName.textContent = name;
     labRoom.textContent = room;
     labTime.textContent = time;
+    confBtn.setAttribute('id', buttonId);
     confBtnTxt.textContent = 'Встать в очередь';
 
     confBtn.appendChild(confBtnTxt)
@@ -35,9 +36,9 @@ main.append(
     createLabItem(
     'Основы серверной веб-разработки п/г-1',
     'Пр2802',
-    'Четверг - 14:30'
+    'Четверг - 14:30', 'labBtn1'
     ),
-    createLabItem('Test', 'А201', 'Пятница - 10:00'),
-    createLabItem('Test', 'Б105', 'Среда - 12:00'),
-    createLabItem('Test', 'В301', 'Понедельник - 08:30')
+    createLabItem('Test2', 'А201', 'Пятница - 10:00', 'labBtn2'),
+    createLabItem('Test3', 'Б105', 'Среда - 12:00', 'labBtn3'),
+    createLabItem('Test4', 'В301', 'Понедельник - 08:30', 'labBtn4')
 );
