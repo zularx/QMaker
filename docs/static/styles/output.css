@@ -10,6 +10,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 10px;
+    --font-weight-extralight: 200;
+    --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -21,6 +23,7 @@
     --radius-1: 10px;
     --radius-2: 20px;
     --radius-10: 100px;
+    --text-1: 10px;
     --text-2: 20px;
     --text-3: 30px;
     --color-base-dark-darkTheme: #15191E;
@@ -188,15 +191,6 @@
   .relative {
     position: relative;
   }
-  .-top-0 {
-    top: calc(var(--spacing) * -0);
-  }
-  .-top-1 {
-    top: calc(var(--spacing) * -1);
-  }
-  .-top-2 {
-    top: calc(var(--spacing) * -2);
-  }
   .-top-3 {
     top: calc(var(--spacing) * -3);
   }
@@ -218,9 +212,6 @@
   .mt-1\.5 {
     margin-top: calc(var(--spacing) * 1.5);
   }
-  .mt-2 {
-    margin-top: calc(var(--spacing) * 2);
-  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -229,6 +220,9 @@
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
   }
   .mr-1\.5 {
     margin-right: calc(var(--spacing) * 1.5);
@@ -251,9 +245,6 @@
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
@@ -265,9 +256,6 @@
   }
   .h-25 {
     height: calc(var(--spacing) * 25);
-  }
-  .h-30 {
-    height: calc(var(--spacing) * 30);
   }
   .h-\[3px\] {
     height: 3px;
@@ -283,9 +271,6 @@
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -378,6 +363,9 @@
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
   }
+  .text-1 {
+    font-size: var(--text-1);
+  }
   .text-2 {
     font-size: var(--text-2);
   }
@@ -400,6 +388,14 @@
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
+  }
+  .font-extralight {
+    --tw-font-weight: var(--font-weight-extralight);
+    font-weight: var(--font-weight-extralight);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
